@@ -5,17 +5,9 @@ const Inert = require("@hapi/inert");
 const Vision = require("@hapi/vision");
 const HapiSwagger = require("hapi-swagger");
 
-const childSchema = Joi.object({
-  p1: Joi.string(),
+const exampleSchema = Joi.object({
+  nullable_property: Joi.string().default(null).example(null),
 }).required();
-
-const responseBodySchema = Joi.object({
-  child: childSchema,
-}).label("Response");
-
-const requestBodySchema = Joi.object({
-  child: childSchema,
-}).label("Request");
 
 const ser = async () => {
   const server = Hapi.Server({
@@ -47,11 +39,11 @@ const ser = async () => {
       },
       tags: ["api"],
       validate: {
-        payload: requestBodySchema,
+        payload: exampleSchema,
       },
       response: {
         status: {
-          201: responseBodySchema,
+          201: exampleSchema,
         },
       },
     },
