@@ -521,9 +521,9 @@ handlebars@^4.7.7:
   optionalDependencies:
     uglify-js "^3.1.4"
 
-"hapi-swagger@https://github.com/AppeninTerenceBARBE/hapi-swagger#feat/add-null-to-example-possible-values":
+"hapi-swagger@https://github.com/AppeninTerenceBARBE/hapi-swagger#master":
   version "14.5.5"
-  resolved "https://github.com/AppeninTerenceBARBE/hapi-swagger#07f5acfc64d3b143c6d18229505cf7ff858b7277"
+  resolved "https://github.com/AppeninTerenceBARBE/hapi-swagger#a77a54ed06d85aef314b3ef43670438b3b4fa7ed"
   dependencies:
     "@hapi/boom" "^9.1.4"
     "@hapi/hoek" "^9.3.0"

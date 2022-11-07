@@ -12,7 +12,7 @@
     "@hapi/vision": "^6.1.0",
     "blipp": "^4.0.2",
     "hapi": "^18.1.0",
-    "hapi-swagger": "https://github.com/AppeninTerenceBARBE/hapi-swagger#feat/add-null-to-example-possible-values",
+    "hapi-swagger": "https://github.com/AppeninTerenceBARBE/hapi-swagger#master",
     "joi": "^17.4.2"
   },
   "keywords": [],
